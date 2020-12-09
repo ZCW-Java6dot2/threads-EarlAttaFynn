@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Start typing messages to the console now. Enter \"quit\" to exit the program");
         Stream<String> inStream = Stream.generate(new Scanner(System.in)::nextLine);
 
-        boolean status = inStream.anyMatch(Main::passValue);
+        Boolean status = inStream.anyMatch(Main::passValue);
     }
 
     private static boolean passValue(String input) {
